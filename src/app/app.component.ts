@@ -14,7 +14,7 @@ import { Observable } from 'rxjs';
 export class AppComponent implements OnInit {
   title = 'angularForNode';
   backendText :any;
-  private backendURL = "http://localhost:4000/api"
+  private backendURL = "https://node-project-te63.onrender.com/api"
 
   constructor(private http: HttpClient) { }
 
