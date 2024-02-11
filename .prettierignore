@@ -1,0 +1,4 @@
+#ignored artifacts
+docs
+.vscode
+.angular

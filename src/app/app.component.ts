@@ -9,17 +9,17 @@ import { Observable } from 'rxjs';
   standalone: true,
   imports: [RouterOutlet, HttpClientModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   title = 'angularForNode';
-  backendText :any;
-  private backendURL = "https://node-project-te63.onrender.com/api"
+  backendText: any;
+  private backendURL = 'https://node-project-te63.onrender.com/api';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   signupUser() {
-    return this.http.get(this.backendURL)
+    return this.http.get(this.backendURL);
   }
 
   ngOnInit() {
@@ -27,6 +27,6 @@ export class AppComponent implements OnInit {
       console.log(res);
 
       this.backendText = res;
-    })
+    });
   }
 }
