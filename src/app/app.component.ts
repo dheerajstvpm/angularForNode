@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, CommonModule],
+  imports: [RouterOutlet, HttpClientModule, CommonModule, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
